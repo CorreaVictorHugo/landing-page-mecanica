@@ -2,11 +2,17 @@
 
 Landing page responsiva criada para apresentar os serviços da **Victor Automóveis** e facilitar pedidos de orçamento e agendamentos pelo WhatsApp.
 
-![Prévia da landing page da Victor Automóveis](Captura%20de%20tela%202026-07-30%20143236.png)
 
 ## Sobre o projeto
 
 O projeto transmite confiança e profissionalismo por meio de uma identidade visual automotiva, com tons de grafite, azul elétrico e uma apresentação direta dos serviços. A página conduz o visitante desde o primeiro contato até o formulário de atendimento.
+
+<img width="1202" height="584" alt="tela-1" src="https://github.com/user-attachments/assets/712a67cf-3368-4a33-b964-aaf6602c9c94" />
+
+<img width="1026" height="508" alt="tela-2" src="https://github.com/user-attachments/assets/aff3cf8c-1868-4334-95cf-8122dba3decf" />
+
+<img width="1304" height="592" alt="tela-3" src="https://github.com/user-attachments/assets/24c661e1-0dbf-475b-91c2-5b1069f5d2cd" />
+
 
 ## Funcionalidades
 
