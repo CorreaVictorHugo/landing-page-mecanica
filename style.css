@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
 
 :root {
-  --bg: #11151a;
-  --surface: #171c22;
-  --surface-raised: #20262e;
+  --bg: #1a2027;
+  --surface: #222a33;
+  --surface-raised: #2a333e;
   --text: #ffffff;
   --muted: #c7ccd3;
   --subtle: #9ba3ad;
@@ -61,7 +61,7 @@ h2 span, h1 strong { color: var(--primary); font-weight: inherit; }
   border-bottom: 1px solid transparent;
 }
 .site-header.scrolled {
-  background: rgba(17, 21, 26, .92); border-color: rgba(255, 255, 255, .12);
+  background: rgba(26, 32, 39, .92); border-color: rgba(255, 255, 255, .12);
   backdrop-filter: blur(16px);
 }
 .nav-shell { min-height: 84px; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
@@ -81,8 +81,8 @@ h2 span, h1 strong { color: var(--primary); font-weight: inherit; }
 .hero-shade {
   position: absolute; inset: 0;
   background:
-    linear-gradient(90deg, rgba(17,21,26,.96) 0%, rgba(17,21,26,.82) 38%, rgba(17,21,26,.2) 70%, rgba(17,21,26,.05)),
-    linear-gradient(0deg, rgba(17,21,26,.68), transparent 30%);
+    linear-gradient(90deg, rgba(26,32,39,.94) 0%, rgba(26,32,39,.78) 38%, rgba(26,32,39,.18) 70%, rgba(26,32,39,.04)),
+    linear-gradient(0deg, rgba(26,32,39,.62), transparent 30%);
 }
 .hero-layout { position: relative; height: 100%; display: flex; align-items: center; padding-top: 70px; }
 .hero-copy { width: min(670px, 60%); }
@@ -112,7 +112,7 @@ h2 span, h1 strong { color: var(--primary); font-weight: inherit; }
 }
 .scroll-cue i { display: block; width: 1px; height: 48px; background: linear-gradient(var(--primary), transparent); }
 
-.services { background: #151a20; overflow: hidden; }
+.services { background: #202832; overflow: hidden; }
 .services::before { content: ""; position: absolute; width: 540px; height: 540px; left: -280px; top: 30%; background: radial-gradient(circle, rgba(21,121,251,.12), transparent 67%); }
 .section-heading { display: grid; grid-template-columns: 1.4fr .6fr; align-items: end; gap: 80px; margin-bottom: 76px; }
 .section-heading h2 { margin-bottom: 0; }
@@ -120,7 +120,7 @@ h2 span, h1 strong { color: var(--primary); font-weight: inherit; }
 .service-stage { display: grid; grid-template-columns: .75fr 1.25fr; gap: 56px; align-items: stretch; }
 .service-feature {
   min-height: 520px; padding: 42px; position: relative; overflow: hidden;
-  background: linear-gradient(145deg, #252c34, #1a2026);
+  background: linear-gradient(145deg, #343e49, #28313a);
   border-radius: var(--radius); box-shadow: inset 0 1px rgba(255,255,255,.14), 0 30px 80px rgba(0,0,0,.35);
   display: flex; flex-direction: column; justify-content: flex-end;
 }
@@ -178,7 +178,7 @@ h2 span, h1 strong { color: var(--primary); font-weight: inherit; }
 .mission blockquote { margin: 0; font-size: clamp(2rem, 4vw, 3.9rem); line-height: 1.13; letter-spacing: -.04em; font-weight: 500; }
 .mission strong { color: var(--primary); font-weight: inherit; }
 
-.testimonials { background: #171c22; border-block: 1px solid var(--border); }
+.testimonials { background: #222a33; border-block: 1px solid var(--border); }
 .testimonials-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 90px; align-items: center; }
 .testimonials h2 { margin-bottom: 0; }
 .testimonial-placeholder {
@@ -189,7 +189,7 @@ h2 span, h1 strong { color: var(--primary); font-weight: inherit; }
 .testimonial-placeholder h3 { color: white; margin-bottom: 8px; font-size: 22px; }
 .testimonial-placeholder p { margin: 0; max-width: 48ch; }
 
-.contact { padding: 100px 0; overflow: hidden; background: #14191f; }
+.contact { padding: 100px 0; overflow: hidden; background: #1e252d; }
 .contact-texture {
   position: absolute; inset: 0; opacity: .42;
   background:
@@ -199,7 +199,7 @@ h2 span, h1 strong { color: var(--primary); font-weight: inherit; }
 }
 .contact-panel {
   position: relative; padding: 70px; border-radius: var(--radius);
-  background: linear-gradient(145deg, #252b32, #1b2026);
+  background: linear-gradient(145deg, #333d47, #283039);
   box-shadow: inset 0 1px rgba(255,255,255,.14), 0 35px 100px rgba(0,0,0,.48);
 }
 .contact-heading { max-width: 740px; text-align: center; margin: 0 auto 44px; }
@@ -210,7 +210,7 @@ h2 span, h1 strong { color: var(--primary); font-weight: inherit; }
 .field-wide { grid-column: 1 / -1; }
 .field label { font-size: 12px; color: var(--muted); margin-bottom: 8px; font-weight: 600; }
 .field input, .field textarea {
-  width: 100%; color: white; background: #151a20; border: 1px solid rgba(255,255,255,.45);
+  width: 100%; color: white; background: #202832; border: 1px solid rgba(255,255,255,.45);
   border-radius: 6px; padding: 14px 16px; outline: none; transition: border-color 160ms, box-shadow 160ms;
 }
 .field input { min-height: 52px; }
@@ -246,7 +246,7 @@ h2 span, h1 strong { color: var(--primary); font-weight: inherit; }
 
 @media (max-width: 960px) {
   .section { padding: 90px 0; }
-  .main-nav { position: fixed; inset: 0; padding: 120px 24px 40px; background: rgba(17,21,26,.98); flex-direction: column; align-items: flex-start; gap: 25px; font-size: 24px; transform: translateX(100%); transition: transform 300ms var(--ease); }
+  .main-nav { position: fixed; inset: 0; padding: 120px 24px 40px; background: rgba(26,32,39,.98); flex-direction: column; align-items: flex-start; gap: 25px; font-size: 24px; transform: translateX(100%); transition: transform 300ms var(--ease); }
   .main-nav.open { transform: translateX(0); }
   .menu-toggle { z-index: 2; display: grid; gap: 7px; width: 44px; height: 44px; padding: 13px 10px; border: 0; background: transparent; }
   .menu-toggle span { height: 1px; background: white; transition: transform 220ms; }
@@ -275,7 +275,7 @@ h2 span, h1 strong { color: var(--primary); font-weight: inherit; }
   .nav-shell { min-height: 72px; }
   .hero { min-height: 760px; height: 100svh; }
   .hero-image { inset: 32% 0 0; background-size: auto 68%; background-position: 59% bottom; background-repeat: no-repeat; }
-  .hero-shade { background: linear-gradient(180deg, rgba(17,21,26,1) 0%, rgba(17,21,26,.88) 50%, rgba(17,21,26,.24) 80%, rgba(17,21,26,.82)); }
+  .hero-shade { background: linear-gradient(180deg, rgba(26,32,39,1) 0%, rgba(26,32,39,.86) 50%, rgba(26,32,39,.22) 80%, rgba(26,32,39,.78)); }
   .hero-layout { align-items: flex-start; padding-top: 130px; }
   .hero-copy { width: 100%; }
   .signal { margin-bottom: 20px; }
