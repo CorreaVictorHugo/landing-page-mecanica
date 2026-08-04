@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Victor Automóveis: mecânica de confiança, diagnóstico preciso e serviço com garantia."
+    />
+    <meta name="theme-color" content="#11151a" />
+    <title>Victor Automóveis | Mecânica de confiança</title>
+    <link rel="preload" href="assets/hero-victor-automoveis.png" as="image" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--
+      THESIS: confiança mecânica é construída mostrando o diagnóstico antes do reparo; recusamos a oficina genérica feita de cards iguais.
+      OWN-WORLD: preto profundo, metal grafite, azul elétrico funcional, linhas técnicas e fotografia automotiva cinematográfica.
+      STORY: o visitante entende o cuidado, encontra o serviço, reconhece o processo transparente e inicia uma conversa.
+      FIRST VIEWPORT: copy editorial ocupa a metade esquerda; o carro emerge da oficina à direita; o WhatsApp fica no eixo principal.
+      FORM: composição cinematográfica assimétrica, prioridade 1, palco de oficina noturna; direção definida pelas referências fornecidas.
+    -->
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+    <header class="site-header" data-header>
+      <div class="container nav-shell">
+        <a class="brand" href="#inicio" aria-label="Victor Automóveis — início">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 44 44">
+              <path d="M8 27 15 13h14l7 14M13 27h18M16 20h12" />
+              <circle cx="13" cy="31" r="4" />
+              <circle cx="31" cy="31" r="4" />
+            </svg>
+          </span>
+          <span>VICTOR<small>AUTOMÓVEIS</small></span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+          aria-label="Abrir menu"
+          data-menu-toggle
+        >
+          <span></span><span></span>
+        </button>
+
+        <nav id="menu-principal" class="main-nav" aria-label="Navegação principal" data-menu>
+          <a href="#servicos">Serviços</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#depoimentos">Avaliações</a>
+          <a href="#contato">Contato</a>
+          <a class="nav-cta" href="#contato">Agendar revisão</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-image" role="img" aria-label="Automóvel grafite em uma oficina moderna"></div>
+        <div class="hero-shade"></div>
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <p class="signal"><span></span> Mecânica de confiança</p>
+            <h1 id="hero-title">Seu carro merece <strong>o melhor cuidado.</strong></h1>
+            <p class="hero-lead">
+              Mecânicos de confiança, diagnóstico preciso e serviço com garantia.
+              Tudo explicado com clareza, do orçamento à entrega.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#contato">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.5 2.3 2.2 4 4.5 4.5"/></svg>
+                Agende pelo WhatsApp
+              </a>
+              <a class="text-link" href="#servicos">Conheça os serviços <span>↘</span></a>
+            </div>
+            <ul class="hero-proof" aria-label="Diferenciais">
+              <li><span>01</span> Diagnóstico honesto</li>
+              <li><span>02</span> Serviço autorizado</li>
+              <li><span>03</span> Garantia e clareza</li>
+            </ul>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#servicos" aria-label="Rolar até serviços">
+          <span>Explore</span><i></i>
+        </a>
+      </section>
+
+      <section class="services section" id="servicos" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section-heading services-heading">
+            <div>
+              <p class="kicker">Mecânica completa</p>
+              <h2 id="services-title">Soluções para manter<br />seu veículo <span>em movimento.</span></h2>
+            </div>
+            <p>
+              Da manutenção preventiva ao diagnóstico eletrônico, cuidamos dos sistemas
+              essenciais do seu carro com responsabilidade técnica.
+            </p>
+          </div>
+
+          <div class="service-stage">
+            <article class="service-feature">
+              <div class="feature-number">12</div>
+              <div>
+                <p>frentes de serviço</p>
+                <span>Uma oficina. Todo o cuidado que seu veículo precisa.</span>
+              </div>
+              <svg class="feature-orbit" viewBox="0 0 260 260" aria-hidden="true">
+                <circle cx="130" cy="130" r="88" />
+                <circle cx="130" cy="130" r="58" />
+                <path d="M35 130h190M130 35v190" />
+              </svg>
+            </article>
+
+            <div class="service-list">
+              <details open>
+                <summary><span>Motor & fluidos</span><i></i></summary>
+                <div class="details-body">
+                  <ul>
+                    <li>Troca de óleo do motor e câmbio</li>
+                    <li>Filtros de óleo, ar, combustível e cabine</li>
+                    <li>Correia dentada e correias auxiliares</li>
+                    <li>Sistema de arrefecimento</li>
+                  </ul>
+                </div>
+              </details>
+              <details>
+                <summary><span>Segurança & condução</span><i></i></summary>
+                <div class="details-body">
+                  <ul>
+                    <li>Freios: pastilhas, discos e cilindros</li>
+                    <li>Suspensão e amortecedores</li>
+                    <li>Alinhamento e balanceamento</li>
+                    <li>Embreagem</li>
+                  </ul>
+                </div>
+              </details>
+              <details>
+                <summary><span>Tecnologia & conforto</span><i></i></summary>
+                <div class="details-body">
+                  <ul>
+                    <li>Diagnóstico computadorizado</li>
+                    <li>Limpeza de bicos e injeção eletrônica</li>
+                    <li>Ar-condicionado automotivo</li>
+                    <li>Elétrica e vazamentos em geral</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+          </div>
+
+          <div class="section-action">
+            <a class="button button-secondary" href="#contato">Solicite um orçamento sem compromisso</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="process section" aria-labelledby="process-title">
+        <div class="container process-grid">
+          <div class="process-copy">
+            <p class="kicker">Sem surpresas</p>
+            <h2 id="process-title">Você autoriza.<br /><span>A gente executa.</span></h2>
+            <p>
+              Um processo simples para você entender o que o carro precisa e decidir
+              com segurança.
+            </p>
+          </div>
+          <ol class="process-steps">
+            <li>
+              <span>01</span>
+              <div><h3>Avaliação cuidadosa</h3><p>O veículo é inspecionado e os sintomas são verificados.</p></div>
+            </li>
+            <li>
+              <span>02</span>
+              <div><h3>Diagnóstico explicado</h3><p>Apresentamos o problema, a solução e o orçamento com clareza.</p></div>
+            </li>
+            <li>
+              <span>03</span>
+              <div><h3>Serviço autorizado</h3><p>Só começamos depois da sua aprovação. Sem rodeios, sem surpresas.</p></div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="about section" id="sobre" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <div class="about-statement">
+            <p class="kicker">Victor Automóveis</p>
+            <h2 id="about-title">Mais que mecânica,<br />uma parceria de <span>confiança.</span></h2>
+          </div>
+          <div class="about-copy">
+            <p class="about-lead">
+              Acreditamos que um serviço bem-feito começa com um diagnóstico honesto.
+            </p>
+            <p>
+              Por isso, cada carro que entra aqui é avaliado com atenção, e cada serviço
+              é explicado com clareza — sem rodeios, sem surpresas.
+            </p>
+          </div>
+        </div>
+
+        <div class="container values">
+          <article><span>H</span><h3>Honestidade</h3><p>Orçamento claro, serviço justo.</p></article>
+          <article><span>Q</span><h3>Qualidade</h3><p>Peças de procedência e mão de obra especializada.</p></article>
+          <article><span>T</span><h3>Transparência</h3><p>Você autoriza, a gente executa.</p></article>
+          <article><span>C</span><h3>Compromisso</h3><p>Prazo combinado, prazo cumprido.</p></article>
+        </div>
+
+        <div class="container mission">
+          <div class="mission-line"></div>
+          <p>Nossa missão</p>
+          <blockquote>
+            Cuidar do seu veículo com responsabilidade técnica,
+            entregando <strong>segurança e tranquilidade</strong> para o seu dia a dia.
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="testimonials section" id="depoimentos" aria-labelledby="testimonials-title">
+        <div class="container testimonials-grid">
+          <div>
+            <p class="kicker">Experiências reais</p>
+            <h2 id="testimonials-title">O que nossos<br />clientes dizem.</h2>
+          </div>
+          <div class="testimonial-placeholder">
+            <svg aria-hidden="true" viewBox="0 0 48 48"><path d="M10 12h28v20H22l-8 6v-6h-4V12Z"/><path d="M17 20h14M17 25h9"/></svg>
+            <div>
+              <h3>Avaliações em breve</h3>
+              <p>Este espaço está preparado para receber depoimentos reais de clientes da Victor Automóveis.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contato" aria-labelledby="contact-title">
+        <div class="contact-texture"></div>
+        <div class="container contact-panel">
+          <div class="contact-heading">
+            <p class="kicker">Vamos cuidar do seu carro?</p>
+            <h2 id="contact-title">Agende sua revisão.</h2>
+            <p>Conte o que está acontecendo e fale diretamente com nossa equipe pelo WhatsApp.</p>
+          </div>
+          <form class="contact-form" data-contact-form novalidate>
+            <div class="field">
+              <label for="nome">Seu nome</label>
+              <input id="nome" name="nome" type="text" autocomplete="name" required />
+              <span class="field-error">Informe seu nome.</span>
+            </div>
+            <div class="field">
+              <label for="telefone">Telefone</label>
+              <input id="telefone" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(XX) XXXXX-XXXX" required />
+              <span class="field-error">Informe um telefone válido.</span>
+            </div>
+            <div class="field field-wide">
+              <label for="mensagem">Como podemos ajudar?</label>
+              <textarea id="mensagem" name="mensagem" rows="3" placeholder="Ex.: preciso agendar uma revisão"></textarea>
+            </div>
+            <button class="button button-primary form-submit" type="submit">
+              Iniciar conversa no WhatsApp
+              <span aria-hidden="true">↗</span>
+            </button>
+            <p class="form-note" data-form-status>
+              O número oficial do WhatsApp deve ser configurado antes da publicação.
+            </p>
+          </form>
+          <div class="contact-meta">
+            <div><span>Telefone</span><strong>(XX) XXXXX-XXXX</strong></div>
+            <div><span>Endereço</span><strong>[Endereço da oficina]</strong></div>
+            <div><span>Horário</span><strong>Seg–Sex, 8h–18h · Sáb, 8h–12h</strong></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <a class="brand" href="#inicio" aria-label="Victor Automóveis — voltar ao início">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 44 44"><path d="M8 27 15 13h14l7 14M13 27h18M16 20h12"/><circle cx="13" cy="31" r="4"/><circle cx="31" cy="31" r="4"/></svg>
+          </span>
+          <span>VICTOR<small>AUTOMÓVEIS</small></span>
+        </a>
+        <p>Seu carro tratado como nosso.</p>
+        <a class="back-top" href="#inicio">Voltar ao topo ↑</a>
+      </div>
+      <div class="container footer-bottom">
+        <p>© 2026 — Victor Automóveis. Todos os direitos reservados.</p>
+        <p>CNPJ: [XX.XXX.XXX/XXXX-XX]</p>
+        <nav aria-label="Links legais">
+          <a href="#contato">Contato</a>
+          <a href="#">Termos de Uso</a>
+          <a href="#">Política de Privacidade</a>
+        </nav>
+      </div>
+    </footer>
+
+    <a class="floating-whatsapp" href="#contato" aria-label="Falar pelo WhatsApp">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.5 2.3 2.2 4 4.5 4.5"/></svg>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
