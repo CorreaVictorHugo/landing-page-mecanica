@@ -1,18 +1,15 @@
 # Victor Automóveis
 
-Landing page responsiva criada para apresentar os serviços da **Victor Automóveis** e facilitar pedidos de orçamento e agendamentos pelo WhatsApp.
+Landing page demonstrativa para apresentar os serviços de uma oficina mecânica e a experiência de solicitação de orçamento.
+
+**[Acessar o site](https://correavictorhugo.github.io/landing-page-mecanica/)**
 
 
 ## Sobre o projeto
 
-O projeto transmite confiança e profissionalismo por meio de uma identidade visual automotiva, com tons de grafite, azul elétrico e uma apresentação direta dos serviços. A página conduz o visitante desde o primeiro contato até o formulário de atendimento.
+O projeto usa uma identidade visual automotiva com tons de grafite e azul elétrico. A página conduz o visitante pelos serviços, processo de atendimento e uma demonstração interativa do formulário.
 
-<img width="1202" height="584" alt="tela-1" src="https://github.com/user-attachments/assets/712a67cf-3368-4a33-b964-aaf6602c9c94" />
-
-<img width="1026" height="508" alt="tela-2" src="https://github.com/user-attachments/assets/aff3cf8c-1868-4334-95cf-8122dba3decf" />
-
-<img width="1304" height="592" alt="tela-3" src="https://github.com/user-attachments/assets/24c661e1-0dbf-475b-91c2-5b1069f5d2cd" />
-
+<img width="1202" height="584" alt="Seção inicial da landing page Victor Automóveis" src="https://github.com/user-attachments/assets/712a67cf-3368-4a33-b964-aaf6602c9c94" />
 
 ## Funcionalidades
 
@@ -20,8 +17,7 @@ O projeto transmite confiança e profissionalismo por meio de uma identidade vis
 - Menu de navegação adaptado para dispositivos móveis
 - Apresentação dos principais serviços da oficina
 - Seção explicando o processo de avaliação e autorização do serviço
-- Formulário de contato com validação
-- Preparação para integração com WhatsApp
+- Formulário demonstrativo com validação e prévia de mensagem para contato
 - Navegação por teclado e foco visível
 - Suporte à preferência de redução de movimento
 
@@ -66,9 +62,9 @@ landing-page-mecanica/
 └── README.md
 ```
 
-## Configuração antes do uso em produção
+## Sobre a demonstração
 
-Os dados de telefone, WhatsApp, endereço e CNPJ ainda aparecem como campos de exemplo. Substitua esses valores pelos dados oficiais da oficina antes de publicar a página para clientes.
+Este é um projeto de portfólio. Os dados comerciais e avaliações reais não foram fornecidos. O formulário gera uma mensagem no navegador para demonstrar a interação: **nenhum dado é enviado ou armazenado**. Para usar a página com clientes, substitua o conteúdo ilustrativo por informações verificadas e configure um canal oficial de atendimento.
 
 ## Autor
 

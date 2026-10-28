@@ -3,6 +3,9 @@ const menu = document.querySelector("[data-menu]");
 const menuToggle = document.querySelector("[data-menu-toggle]");
 const form = document.querySelector("[data-contact-form]");
 const formStatus = document.querySelector("[data-form-status]");
+const messagePreview = document.querySelector("[data-message-preview]");
+const messageOutput = document.querySelector("[data-message-output]");
+const copyMessage = document.querySelector("[data-copy-message]");
 
 const syncHeader = () => header?.classList.toggle("scrolled", window.scrollY > 24);
 syncHeader();
@@ -37,37 +40,56 @@ document.querySelectorAll(".service-list details").forEach((item) => {
   });
 });
 
+form?.addEventListener("input", (event) => {
+  if (event.target.matches("input")) {
+    event.target.closest(".field").classList.remove("invalid");
+    event.target.removeAttribute("aria-invalid");
+  }
+  messagePreview.hidden = true;
+  formStatus.textContent = "Demonstração local: nenhum dado é armazenado ou enviado.";
+  formStatus.classList.remove("error");
+});
+
 form?.addEventListener("submit", (event) => {
   event.preventDefault();
   const name = form.elements.nome;
   const phone = form.elements.telefone;
   const message = form.elements.mensagem;
   const phoneDigits = phone.value.replace(/\D/g, "");
+  const invalidName = name.value.trim().length < 2;
+  const invalidPhone = phoneDigits.length < 10;
 
-  name.closest(".field").classList.toggle("invalid", name.value.trim().length < 2);
-  phone.closest(".field").classList.toggle("invalid", phoneDigits.length < 10);
+  name.closest(".field").classList.toggle("invalid", invalidName);
+  phone.closest(".field").classList.toggle("invalid", invalidPhone);
+  name.setAttribute("aria-invalid", String(invalidName));
+  phone.setAttribute("aria-invalid", String(invalidPhone));
 
-  if (name.value.trim().length < 2 || phoneDigits.length < 10) {
+  if (invalidName || invalidPhone) {
+    messagePreview.hidden = true;
     formStatus.textContent = "Revise os campos indicados para continuar.";
     formStatus.classList.add("error");
     form.querySelector(".invalid input")?.focus();
     return;
   }
 
-  const whatsappNumber = "";
-  if (!whatsappNumber) {
-    formStatus.textContent =
-      "Formulário validado. Configure o número oficial no arquivo script.js para ativar o WhatsApp.";
-    formStatus.classList.add("error");
-    return;
-  }
-
-  const text = [
+  messageOutput.value = [
     `Olá, meu nome é ${name.value.trim()}.`,
     `Telefone: ${phone.value.trim()}.`,
     message.value.trim() || "Gostaria de agendar uma revisão.",
   ].join("\n");
 
+  messagePreview.hidden = false;
+  formStatus.textContent = "Mensagem gerada apenas neste navegador. Você pode copiá-la abaixo.";
   formStatus.classList.remove("error");
-  window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`, "_blank", "noopener");
+});
+
+copyMessage?.addEventListener("click", async () => {
+  try {
+    await navigator.clipboard.writeText(messageOutput.value);
+    formStatus.textContent = "Mensagem copiada.";
+  } catch {
+    messageOutput.focus();
+    messageOutput.select();
+    formStatus.textContent = "Selecione a mensagem e copie manualmente.";
+  }
 });
