@@ -4,12 +4,20 @@ Landing page demonstrativa para apresentar os serviços de uma oficina mecânica
 
 **[Acessar o site](https://correavictorhugo.github.io/landing-page-mecanica/)**
 
-
 ## Sobre o projeto
 
 O projeto usa uma identidade visual automotiva com tons de grafite e azul elétrico. A página conduz o visitante pelos serviços, processo de atendimento e uma demonstração interativa do formulário.
 
-<img width="1202" height="584" alt="Seção inicial da landing page Victor Automóveis" src="https://github.com/user-attachments/assets/712a67cf-3368-4a33-b964-aaf6602c9c94" />
+![Seção inicial da landing page Victor Automóveis](assets/tela-1.png)
+
+<details>
+<summary>Ver mais capturas</summary>
+
+![Etapas de atendimento](assets/tela-2.png)
+
+![Seção de contato](assets/tela-3.png)
+
+</details>
 
 ## Funcionalidades
 
@@ -55,7 +63,10 @@ Depois acesse `http://localhost:8000`.
 ```text
 landing-page-mecanica/
 ├── assets/
-│   └── hero-victor-automoveis.png
+│   ├── hero-victor-automoveis.png
+│   ├── tela-1.png
+│   ├── tela-2.png
+│   └── tela-3.png
 ├── index.html
 ├── style.css
 ├── script.js
